@@ -1,0 +1,153 @@
+body {
+  background-color: #0b0b0b;
+}
+
+h1, h2, h3, h4 {
+  font-family: 'Muli', 'Open Sans', Arial, sans-serif;
+}
+
+a {
+  color: white;
+}
+
+.App {
+  text-align: center;
+  font-family: 'Muli', 'Open Sans', Arial, sans-serif;
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: 20px;
+  color: #fff;
+  padding-bottom: 50px;
+}
+
+.wrapper {
+  width: 100%;
+}
+
+.split {
+  width: 50%;
+  height: 120px;
+  float: left;
+  overflow-x: hidden;
+}
+
+.left {
+  padding-top: 40px;
+  padding-bottom: 20px;
+  background-color: #048d99;
+}
+
+.right {
+  padding-top: 60px;
+  padding-bottom: 0;
+  background-color: #950740;
+}
+
+.boxlink {
+  font-size: 25px;
+  color: #fff;
+  font-weight: 600;
+  text-decoration: none;
+  border: solid 1px white;
+  padding: 12px 35px;
+  border-radius: 10px;
+}
+
+.searchinput {
+  width: 60%;
+  height: 50px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+  border: solid 1px #e0e0e0;
+  text-align: center;
+  font-size: 25px;
+  margin-bottom: 12px;
+}
+
+button {
+  background-color: transparent;
+  font-weight: bold;
+  color: #fff
+}
+
+.button {
+  font-size: 25px;
+  height: 45px;
+  width: 140px;
+  border-radius: 10px;
+}
+
+.btnlink {
+  border: none;
+  font-size: 20px;
+  font-weight: bold;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.results, .trackslist {
+  visibility:visible;
+  opacity:1;
+  width: 55%; 
+  left: 24%;
+  color: #fff;
+  text-align: left;
+  padding: 0;
+  margin: 0;
+  font-weight: 600;
+}
+
+.results li {
+  padding: 17px;
+  margin-bottom: 5px;
+  display: block;
+  list-style: none;
+  text-transform: uppercase;
+}
+
+.results li:nth-child(2n) {
+  background-color: #444;
+}
+
+.results li:nth-child(2n+1) {
+  background-color: #333;
+}
+
+.trackslist.hide {
+  visibility:hidden;
+  opacity:0;
+  transition:visibility 0.3s linear,opacity 0.3s linear;
+}
+
+.modal {
+  position: fixed; 
+  z-index: 1;
+  padding-top: 100px; 
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%; 
+  overflow: auto; 
+  background-color: rgb(0,0,0); 
+  background-color: rgba(0,0,0,0.4); 
+  margin-bottom: 20px;
+}
+
+.modal-content {
+  background-color: #e8e8e8;
+  color: #202020;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+}
+
+.pagination {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
